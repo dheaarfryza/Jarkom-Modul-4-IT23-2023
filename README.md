@@ -62,11 +62,27 @@
 
 ![C](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/9180807c-fb28-4848-83dd-818e22cd1533)
 
-
 #### Subnetting D
+
+![D](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/10430547-76f9-4711-9a42-260f78f0bc30)
 
 #### Subnetting E
 
+![E](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/0128a025-40c9-472f-be52-2c041d937ac5)
+
 #### Subnetting F
 
+![F](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/44859b51-f4d7-4836-ac88-141f0a05f952)
+
 #### Subnetting G
+
+![G](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/7e475cae-cbf0-4e02-93d9-1c11a4f641fc)
+
+#### Subnetting H
+
+![H](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/719f89ad-694f-4cc6-8446-bd6a31bb2ed0)
+
+#### Subnetting I
+
+![I](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/36d8ec38-a74d-4e92-896c-e5ac94dc1aea)
+39
