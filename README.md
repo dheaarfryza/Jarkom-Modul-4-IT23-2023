@@ -9,4 +9,8 @@
 
 # Laporan Resmi
 ## Daftar Isi
+[A. VLSM](#VLSM)
+- [Topologi](#topologi)
+
+[B. CIDR](#CIDR)
 - [Topologi](#topologi)
