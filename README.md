@@ -14,3 +14,8 @@
 
 [B. CIDR](#CIDR)
 - [Topologi](#topologi)
+
+#### Topologi
+
+![topo gns3](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/e51f7853-b945-46f8-9ae7-79a7899d7471)
+
