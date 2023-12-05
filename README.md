@@ -17,6 +17,7 @@
 [B. CIDR](#CIDR)
 - [Topologi CIDR](#topologicidr)
 - [Penggabungan - CIDR](#penggabungancidr)
+- [Pembagian IP](#pembagianip)
 
 ### Rute
 | Nama Subnet | Rute | Jumlah IP | Netmask |
@@ -85,4 +86,12 @@
 #### Subnetting I
 
 ![I](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/36d8ec38-a74d-4e92-896c-e5ac94dc1aea)
-39
+
+Setelah menentukan subnetting pada topologi nya, selanjutnya melakukan pembagian IP dengan menggunakan tree (pohon) :
+
+![Salinan modul4 drawio](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/065d4272-a5b2-4c3a-841e-1ff7f7e37b9c)
+
+### Pembagian IP
+
+![pembagian ip](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/b3c9bf31-cb15-4fdf-9fce-a8fda56fd883)
+
