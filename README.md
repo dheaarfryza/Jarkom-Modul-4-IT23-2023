@@ -95,3 +95,13 @@ Setelah menentukan subnetting pada topologi nya, selanjutnya melakukan pembagian
 
 ![pembagian ip](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/b3c9bf31-cb15-4fdf-9fce-a8fda56fd883)
 
+Melakukan routing pada GNS3, dengan perintah:
+``` route add -net <NID subnet> netmask <netmask> gw <IP gateway> ```
+
+Berikut static routing di GNS3 untuk menghubungkan semua subnet:
+### Aura
+
+### Denken
+
+### Eisen
+
