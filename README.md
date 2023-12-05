@@ -15,7 +15,8 @@
 - [Topologi VLSM](#topologivlsm)
 
 [B. CIDR](#CIDR)
-- [Topologi CIDR](#topologividr)
+- [Topologi CIDR](#topologicidr)
+- [Penggabungan - CIDR](#penggabungancidr)
 
 ### Rute
 | Nama Subnet | Rute | Jumlah IP | Netmask |
@@ -47,3 +48,25 @@
 
 ![topo gns3](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/e51f7853-b945-46f8-9ae7-79a7899d7471)
 
+### Penggabungan - CIDR
+
+#### Subnetting A
+
+![A](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/243fb82d-ce3e-4095-8741-3c63df7275d9)
+
+#### Subnetting B
+
+![B](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/873d96e3-970a-4540-8432-a0a42587c2f8)
+
+#### Subnetting C
+
+![C](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/9180807c-fb28-4848-83dd-818e22cd1533)
+
+
+#### Subnetting D
+
+#### Subnetting E
+
+#### Subnetting F
+
+#### Subnetting G
