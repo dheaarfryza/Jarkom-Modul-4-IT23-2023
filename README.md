@@ -13,6 +13,13 @@
 
 [A. VLSM](#VLSM)
 - [Topologi VLSM](#topologivlsm)
+- [Pembagian IP - VLSM](#pembagianipvlsm)
+- [Tree VLSM](#tree-vlsm)
+- [Konfigurasi Router](#konfigurasi-router)
+- [Konfigurasi Client PC](#konfigurasi-client-pc)
+- [Routing](#routing)
+- [Ping VLSM](#ping-vlsm)
+
 
 [B. CIDR](#CIDR)
 - [Topologi CIDR](#topologicidr)
@@ -44,6 +51,68 @@
 | A20	| Lawine-Switch7-BredtRegion-Heiter |	31 |	/26 |
 | A21	| Heiter-Switch8-RiegelCanyon-Sein |	512	| /22 |
 | Total | | 4255 | |
+
+### Topologi VLSM
+
+![topo vlsm](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/b49f1cbf-2a93-45df-90ab-03282ff9b50a)
+
+### Pembagian IP - VLSM
+
+| Subnet | Network ID    | Subnet Mask         | Broadcast        | Netmask | Jumlah IP |
+|--------|---------------|---------------------|------------------|---------|-----------|
+| A1     | 10.75.0.0     | 255.255.248.0       | 10.75.7.255      | /21     | 1023      |
+| A2     | 10.75.144.0   | 255.255.255.252     | 10.75.144.3      | /30     | 2         |
+| A3     | 10.75.8.0     | 255.255.252.0       | 10.75.11.255     | /22     | 1001      |
+| A4     | 10.75.148.0   | 255.255.255.252     | 10.75.148.3      | /30     | 2         |
+| A5     | 10.75.128.0   | 255.255.255.248     | 10.75.128.7      | /29     | 6         |
+| A6     | 10.75.152.0   | 255.255.255.252     | 10.75.152.3      | /30     | 2         |
+| A7     | 10.75.192.0   | 255.255.255.224     | 10.75.192.31     | /27     | 25        |
+| A8     | 10.75.156.0   | 255.255.255.252     | 10.75.156.3      | /30     | 2         |
+| A9     | 10.75.160.0   | 255.255.255.252     | 10.75.160.3      | /30     | 2         |
+| A10    | 10.75.24.0    | 255.255.255.0       | 10.75.24.255     | /24     | 127       |
+| A11    | 10.75.164.0   | 255.255.255.252     | 10.75.164.3      | /30     | 2         |
+| A12    | 10.75.168.0   | 255.255.255.252     | 10.75.168.30     | /30     | 2         |
+| A13    | 10.75.136.0   | 255.255.255.248     | 10.75.136.7      | /29     | 3         |
+| A14    | 10.75.172.0   | 255.255.255.252     | 10.75.172.3      | /30     | 2         |
+| A15    | 10.75.12.0    | 255.255.252.0       | 10.75.15.255     | /22     | 1001      |
+| A16    | 10.75.25.0    | 255.255.255.0       | 10.75.25.255     | /24     | 251       |
+| A17    | 10.75.176.0   | 255.255.255.252     | 10.75.176.3      | /30     | 2         |
+| A18    | 10.75.20.0    | 255.255.254.0       | 10.75.21.255     | /23     | 255       |
+| A19    | 10.75.180.0   | 255.255.255.252     | 10.75.180.3      | /30     | 2         |
+| A20    | 10.75.64.0    | 255.255.255.192     | 10.75.64.63      | /26     | 31        |
+| A21    | 10.75.216.0   | 255.255.252.0       | 10.75.219.255    | /22     | 512       |
+
+### Tree-VLSM   
+![Vlsm-tree](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/17eabe36-25d1-468f-9938-b6fef7134d07)
+
+### Konfigurasi Router
+Setelah dilakukan pembagian IP lakukan set up pada setiap router sesuai dengan netmask dan subnet yang tertera pada tabel di atas.
+
+Misalnya pada router Aura di subnet A9, maka sebagai berikut:
+![config-ip](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/4dcbcc92-0811-442b-a5f3-fd505cf4f03b)
+
+Lakukan hal yang sama pada router lainnya, sesuai dengan subnet dan netmask yang telah ditentukan.
+
+### Konfigurasi Client PC
+Seperti halnya router untuk client(PC) di setiap subnet juga harus diatur IP nya sesuai dengan subnet yang telah ditentukan.
+
+Misalnya pada client PC(RoyalCapital) di subnet A10, maka sebagai berikut:
+![config-pc](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/8a9584ef-5180-4b0a-981a-5fcf33430f61)
+masukkan IP yang tersedia di subnet A10 dan netmask yang telah ditentukan. jangan lupa untuk memasukkan gateway yang mengarah ke ip pertama di subnet A10. lakukan hal yang sama pada client PC lainnya sesuai dengan subnet yang telah ditentukan.
+
+### Routing
+Untuk melakukan routing, pada setiap router masukkan network id setiap subnet ke router yang akan dihubungkan dan dilakukan secara bolak balik, contoh routing untuk aura adalah sebagai berikut:
+![routing](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/0c59defa-32c9-41bc-a699-ea16057fba06)
+
+Namun terkadang kita perlu menambahkan routing wildcard dari semua ip yang keluar dari salah satu router untuk agar bisa kembali ke router utama, seperti contoh berikut:
+![wildcardroute](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/e314c242-4438-43bf-9f3d-9d260fc3ff52)
+
+### Ping VLSM
+Berikut adalah hasil uji coba ping untuk testcase yang telah diberikan.
+![testcase1](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/8fe4ad8a-1893-4d3e-a500-35f8b8534c97)
+
+![testcase2](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/94961661/46c97cbd-2b6b-4f06-8983-d33173a20c6d)
+
 
 ### Topologi CIDR
 
