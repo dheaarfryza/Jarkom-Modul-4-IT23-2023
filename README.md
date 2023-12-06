@@ -192,12 +192,65 @@ route add -net 10.75.32.0 netmask 255.255.255.0 gw 10.75.128.2
 
 Ke Eisen
 route add -net 10.75.16.0 netmask 255.255.255.252 gw 10.75.16.2
+
+Ke TurkRegion
+route add -net 10.75.0.4 netmask 255.255.255.0 gw 10.75.16.2
+
+Ke GrobeForest
+route add -net 10.75.64.0 netmask 255.255.255.0 gw 10.75.16.2
+
+Ke GranzChannel
+route add -net 10.75.66.0 netmask 255.255.254.0 gw 10.75.16.2
 ```
 
 - Denken
 ```
+Ke Aura
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.75.128.2
 ```
+
+- Eisen
+```
+Ke Aura
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.75.128.2
+
+Ke TurkRegion
+route add -net 10.75.0.4 netmask 255.255.255.0 gw 10.75.0.2
+
+Ke GrobeForest
+route add -net 10.75.64.0 netmask 255.255.255.0 gw 10.75.0.2
+
+Ke GranzChannel
+route add -net 10.75.66.0 netmask 255.255.254.0 gw 10.75.65.2
+```
+
+- Lugner
+```
+Ke Eisen
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.75.0.1
+
+Ke GrobeForest
+route add -net 10.75.64.0 netmask 255.255.255.0 gw 10.75.64.2
+
+Ke TurkRegion
+route add -net 10.75.0.4 netmask 255.255.255.0 gw 10.75.0.5
+```
+
+- Linie
+```
+Ke Eisen
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.75.65.1
+```
+
+
 ### Testing PING
+
+#### Aura - Eisen
+
+![aura-eisen](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/39a98c5e-2120-4304-b261-85fc6cddbdd7)
+
+#### GrobeForest - GranzChannel
+
+![grob-granz](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/8144ca73-9163-40b3-a83a-bed1755d6cc6)
 
 
