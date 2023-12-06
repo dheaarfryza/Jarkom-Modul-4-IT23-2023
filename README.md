@@ -123,11 +123,66 @@ Berikut static routing di GNS3 untuk menghubungkan semua subnet:
 auto eth0
 iface eth0 inet dhcp
 
+#A11 Aura-Eisen
+auto eth1
+iface eth1 inet static
+	address 10.75.16.1
+	netmask 255.255.255.252
+
+#A9 Aura-Denken
+auto eth2
+iface eth2 inet static
+	address 10.75.128.1
+	netmask 255.255.255.0
+
+#A8 Aura-Frieren
+auto eth3
+iface eth3 inet static
+	address 10.78.0.1
+	netmask 255.255.255.252
 ```
+
 #### Denken
+```
+#A9 Denken-Aura
+auto eth0
+iface eth0 inet static
+	address 10.75.128.2
+	netmask 255.255.255.0
+
+#A10 Denken-Switch-RoyalCapital-Switch-WileRegion
+auto eth1
+iface eth1 inet static
+	address 10.75.32.1
+	netmask 255.255.255.0
+```
 
 #### Eisen
+```
+#A11 Eisen-Aura
+auto eth0
+iface eth0 inet static
+	address 10.75.16.2
+	netmask 255.255.255.252
 
+#A12 Eisen-Switch-Stark
+auto eth1
+iface eth1 inet static
+	address 10.75.8.1
+	netmask 255.255.255.252
+
+#A13 Eisen-Switch1-Richter-Revolte
+auto eth2
+iface eth1 inet static
+	address 10.75.8.2
+	netmask 255.255.255.248
+
+#A14 Eisen-Lugner
+auto eth3
+iface eth3 inet static
+	address 10.75.0.2
+	netmask 255.255.255.252
+ ```
 
 ### Testing PING
 
