@@ -117,7 +117,7 @@ Selanjutnya melakukan pembagian IP dengan menggunakan tree (pohon) :
 Melakukan routing pada GNS3, dengan perintah:
 ``` route add -net <NID subnet> netmask <netmask> gw <IP gateway> ```
 
-Berikut static routing di GNS3 untuk menghubungkan semua subnet:
+Berikut konfigurasi network
 #### Aura
 ```
 auto eth0
@@ -184,6 +184,20 @@ iface eth3 inet static
 	netmask 255.255.255.252
  ```
 
+Berikut static routing di GNS3 untuk menghubungkan semua subnet:
+- Aura
+```
+Ke Denken
+route add -net 10.75.32.0 netmask 255.255.255.0 gw 10.75.128.2
+
+Ke Eisen
+route add -net 10.75.16.0 netmask 255.255.255.252 gw 10.75.16.2
+```
+
+- Denken
+```
+route add -net 0.0.0.0 netmask 0.0.0.0 gw 10.75.128.2
+```
 ### Testing PING
 
 
