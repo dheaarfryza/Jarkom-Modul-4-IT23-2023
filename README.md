@@ -87,7 +87,26 @@
 
 ![I](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/36d8ec38-a74d-4e92-896c-e5ac94dc1aea)
 
-Setelah menentukan subnetting pada topologi nya, selanjutnya melakukan pembagian IP dengan menggunakan tree (pohon) :
+Setelah menentukan subnetting pada topologi nya, dilakukan penggabungan berdasarkan subnetting diatas
+
+![1](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/93317af9-4106-41c6-bd9f-1e1bfa452ae4)
+
+![2](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/bee3abc4-5042-4e1f-880f-b1206d074a73)
+
+![3](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/331758f5-db77-4b23-805d-c488c6d4df99)
+
+![4](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/ab303055-89db-4a04-a34f-ff58181ffb61)
+
+![5](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/e73d6531-0d46-4b33-a8e5-9f8a72b9a25f)
+
+![6](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/01c5d028-a336-4da2-9d0c-a4d138a11833)
+
+![7](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/713b67cc-5de8-48d2-833c-6a23bb22e30a)
+
+![8](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/764d878b-9d63-400b-806f-8c414b84e312)
+
+### Tree
+Selanjutnya melakukan pembagian IP dengan menggunakan tree (pohon) :
 
 ![Salinan modul4 drawio](https://github.com/dheaarfryza/Jarkom-Modul-4-IT23-2023/assets/89828723/065d4272-a5b2-4c3a-841e-1ff7f7e37b9c)
 
@@ -99,9 +118,17 @@ Melakukan routing pada GNS3, dengan perintah:
 ``` route add -net <NID subnet> netmask <netmask> gw <IP gateway> ```
 
 Berikut static routing di GNS3 untuk menghubungkan semua subnet:
-### Aura
+#### Aura
+```
+auto eth0
+iface eth0 inet dhcp
 
-### Denken
+```
+#### Denken
 
-### Eisen
+#### Eisen
+
+
+### Testing PING
+
 
